@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'kaguya';
+    src: url('../fonts/GarnetCapitals-Regular.ttf');
+}
+body{
+    margin: 0;
+    background-color: rgb(39, 91, 231);
+    font-family: 'kaguya', Arial, Helvetica, sans-serif;
+}
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    margin: 0;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 120px;
+}
+.logo-title-container{
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255)
+}
+.logo-container{
+    width: 23%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+   white-space: nowrap;
+}
+.logo-container img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+header .logo-container{
+    margin-left: 15px;
+    margin-top: 20px;
+    transition: all 2s ease;
+}
+header .logo-container:hover{
+    display: block;
+    transform: rotate(10turn)
+}
+.nav-container{
+    width: 60%;
+}
+.nav-container a:hover{
+    color: blue;
+    display: block;
+    transform: scale(1.5);
+}
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    align-items: center;
+}
+.button-nav{
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 200px;
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    text-align: center;
+}
+.nav-container a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+main{
+    background-color: rgb(202, 202, 206);
+}
+.section-contact {
+    background-color: rgb(39, 91, 231);
+    margin: auto;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.section-contact p {
+    margin-top: 20px;
+    font-size: large;
+    margin-bottom: 50px;
+
+}
+
+.section-contact H2 {
+    font-size: 50px;
+}
+.info{
+
+    padding-top: 20px;
+    width: 70%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.info img{
+    width: 100px;
+}
+.info article {
+    height: 300px;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.info article:nth-child(even) {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.formulaire-contact{
+    background-color: rgb(39, 91, 231);
+    color: white;
+    padding-bottom: 100px;
+}
+.formulaire-contact h2{
+    display: flex;
+    margin: 0;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: center;
+}
+.fc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.fc input{
+    width: 300px;
+    height: 30px;
+}
+.Username {
+    padding-bottom: 13px;
+}
+.Name {
+    padding-bottom: 13px;
+}
+.Nickname {
+    padding-bottom: 13px;
+}
+.email {
+    padding-bottom: 13px;
+}
+.text-comment {
+    padding-top: 5px;
+    text-align: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    background-color:blue;
+    height: 120px;
+}
+.logo-container-snd{
+    width: 100%;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   white-space: nowrap;
+}
+.logo-container-snd img{
+    width: 70%;
+    margin: 0;
+}
+.sub{
+    display: flex;
+}
+.reset{
+    margin-right: 5px;
+}
+@media (max-width: 760px){
+
+    header{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .nav-container ul{   
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 38px;
+        gap: 13px;
+   }
+
+    .logo-container img{
+        width: 0px;
+    }
+
+    h1{
+        font-size: 0px;
+    }
+
+    main{
+        height: 1850px;
+    }
+    .info{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
